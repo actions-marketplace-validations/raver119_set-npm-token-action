@@ -21,7 +21,7 @@ async function run() {
 
       if (scope.length > 0 && scope.startsWith("@")) {
         // if scope was defined - apply it
-        npmrc = `${npmrc}\m${scope}:registry=${registry.replace(/\/$/, "")}`
+        npmrc = `${npmrc}\n${scope}:registry=${registry.replace(/\/$/, "")}`
       }
     }
 
