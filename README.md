@@ -11,9 +11,9 @@ GitHub Action to create a .npmrc file with your NPM token inside it so that you 
 ## Example usage
 
 ```yaml
-uses: @raver119/set-npm-token-action@v1
+uses: raver119/set-npm-token-action@v1.3
 with:
   token: ${{ secrets.NPM_TOKEN }}
-  registry: https://npm.pkg.github.com
-  scope: @somescope
+  registry: "https://npm.pkg.github.com"
+  scope: "@somescope"
 ```
