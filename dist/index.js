@@ -121,6 +121,8 @@ const core = __webpack_require__(470);
 async function run() {
   try {
     const token = core.getInput('token');
+    const scope = core.getInput('scope');
+    const registry = core.getInput('registry');
     core.setSecret(token);
     fs.writeFile('.npmrc', `//registry.npmjs.org/:_authToken=${token}`, error => {
       if (error) {

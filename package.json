@@ -1,10 +1,10 @@
 {
   "name": "set-npm-token-action",
   "version": "1.0.0",
-  "description": "GitHub Action to create a .npmrc file with your NPM token inside it.",
+  "description": "GitHub Action to create a .npmrc file with your NPM token inside it. Takes registry into account",
   "main": "index.js",
   "license": "MIT",
-  "author": "@filipstefansson",
+  "author": "@filipstefansson, @raver119",
   "scripts": {
     "build": "ncc build index.js"
   },

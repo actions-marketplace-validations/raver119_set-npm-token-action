@@ -1,4 +1,4 @@
-name: "Set NPM Token Action"
+name: "Set NPMRC Token & Registry Action"
 description: "Creates a .npmrc file with your NPM token inside it."
 icon: "box"
 color: "red"
@@ -6,6 +6,14 @@ inputs:
   token:
     description: "your npm token"
     required: true
+
+  registry:
+    description: "registry for this token. optional."
+    required: false
+
+  scope:
+    description: "scope for this token. optional."
+    required: false
 runs:
   using: "node12"
   main: "dist/index.js"
